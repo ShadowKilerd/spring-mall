@@ -25,6 +25,8 @@ public class CartTest {
 
     @Test
     public void should_return_201_when_add_products_into_cart() {
+
+        // TODO ? why the data inserted did not be removed after testing
         List<ProductView> productViewList = new ArrayList<>();
         productViewList.add(new ProductView(1, 10));
         productViewList.add(new ProductView(2, 10));

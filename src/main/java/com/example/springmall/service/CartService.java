@@ -15,7 +15,16 @@ public class CartService {
     private CartRepository cartRepository;
 
     public void add(List<ProductView> productViews) {
-        this.cartRepository.add(productViews);
+
+        for(ProductView productView: productViews) {
+            Cart cart = Cart
+                    .builder()
+                    .productId(productView.getProductId())
+                    .quantity(productView.getQuantity())
+                    .build();
+            this.cartRepository.save(cart);
+
+        }
 
     }
 

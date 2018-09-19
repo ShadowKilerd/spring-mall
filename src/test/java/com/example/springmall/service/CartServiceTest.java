@@ -14,6 +14,7 @@ import java.util.List;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
@@ -30,9 +31,10 @@ public class CartServiceTest {
     @Test
     public void should_add_products_to_cart() {
         ArrayList<ProductView> productViews = new ArrayList<>();
+        productViews.add(ProductView.builder().productId(1).quantity(10).build());
         this.cartService.add(productViews);
 
-        verify(cartRepository, times(1)).add(productViews);
+        verify(cartRepository, times(1)).save(any());
     }
 
     @Test

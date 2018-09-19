@@ -28,7 +28,7 @@ public class ProductsTest {
     public void should_return_product_list_when_calling_get_product_list() {
 
         ResponseEntity<List<Product>> productListEntity =this.testRestTemplate.exchange(
-                "/api/integration",
+                "/api/products",
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<List<Product>>(){}
