@@ -1,13 +1,21 @@
 package com.example.springmall.bean;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
+@Entity
 public class Product {
+
+    @Id
+    private int id;
+
     private String name;
     private int price;
     private String unit;

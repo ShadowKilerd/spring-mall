@@ -1,4 +1,4 @@
-package com.example.springmall.products;
+package com.example.springmall.integration;
 
 import com.example.springmall.bean.Product;
 import org.junit.Test;
@@ -28,7 +28,7 @@ public class ProductsTest {
     public void should_return_product_list_when_calling_get_product_list() {
 
         ResponseEntity<List<Product>> productListEntity =this.testRestTemplate.exchange(
-                "/api/products",
+                "/api/integration",
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<List<Product>>(){}
