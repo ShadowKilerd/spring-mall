@@ -23,7 +23,6 @@ public class CartService {
                     .quantity(productView.getQuantity())
                     .build();
             this.cartRepository.save(cart);
-
         }
 
     }

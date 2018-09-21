@@ -32,6 +32,7 @@ public class CartServiceTest {
     public void should_add_products_to_cart() {
         ArrayList<ProductView> productViews = new ArrayList<>();
         productViews.add(ProductView.builder().productId(1).quantity(10).build());
+
         this.cartService.add(productViews);
 
         verify(cartRepository, times(1)).save(any());
