@@ -26,10 +26,8 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.when;
 
-@RunWith(SpringRunner.class)
-@ContextConfiguration(classes = SpringMallApplication.class)
 @WebMvcTest(OrderController.class)
-public abstract class BaseOrderTest {
+public abstract class BaseOrderTest extends BaseTest{
 
     @Autowired
     private MockMvc mockMvc;

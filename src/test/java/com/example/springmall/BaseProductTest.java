@@ -18,8 +18,6 @@ import java.util.List;
 
 import static org.mockito.BDDMockito.given;
 
-@RunWith(SpringRunner.class)
-@ContextConfiguration(classes = SpringMallApplication.class)
 @WebMvcTest(ProductController.class)
 public abstract class BaseProductTest extends BaseTest {
     @Autowired
