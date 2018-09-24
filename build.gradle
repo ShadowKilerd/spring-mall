@@ -61,5 +61,6 @@ contracts {
     baseClassMappings {
         baseClassMapping('product', 'com.example.springmall.BaseProductTest')
         baseClassMapping('cart', 'com.example.springmall.BaseCartTest')
+        baseClassMapping('order', 'com.example.springmall.BaseOrderTest')
     }
 }
