@@ -63,4 +63,12 @@ public class Product {
     public void setImgUrl(String imgUrl) {
         this.imgUrl = imgUrl;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }
