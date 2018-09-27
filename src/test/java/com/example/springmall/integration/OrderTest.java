@@ -37,7 +37,7 @@ public class OrderTest {
     public void should_return_201_and_order_detail_when_creating_order() {
 
         ResponseEntity<Order> response = this.testRestTemplate.postForEntity(
-                "/api/users/1/orders",
+                "/users/1/orders",
                 null,
                 Order.class
         );

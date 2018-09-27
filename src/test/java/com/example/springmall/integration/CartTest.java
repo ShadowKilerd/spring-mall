@@ -42,7 +42,7 @@ public class CartTest {
         productViewList.add(new ProductView(2, 10));
 
         ResponseEntity<String> response = this.testRestTemplate
-                .postForEntity("/api/users/1/carts", productViewList, String.class);
+                .postForEntity("/users/1/carts", productViewList, String.class);
         assertThat(response.getStatusCode(), is(HttpStatus.CREATED));
     }
 }

@@ -36,7 +36,7 @@ public class CartControllerTest {
         given(cartService.getAll()).willReturn(getCartList());
         this.mockMvc
                 .perform(
-                        post("/api/users/1/carts")
+                        post("/users/1/carts")
                                 .contentType(MediaType.APPLICATION_JSON)
                                 .content("[{\"productId\": 1, \"quantity\": 10},{\"productId\": 2, \"quantity\": 3}]")
                 )

@@ -3,7 +3,7 @@ package product
 org.springframework.cloud.contract.spec.Contract.make {
     request {
         method 'GET'
-        url '/api/products'
+        url '/products'
     }
     response {
         status 200

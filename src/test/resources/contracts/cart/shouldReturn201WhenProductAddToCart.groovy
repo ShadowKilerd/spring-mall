@@ -4,7 +4,7 @@ package cart
 org.springframework.cloud.contract.spec.Contract.make {
     request {
         method 'POST'
-        url '/api/users/1/carts'
+        url '/users/1/carts'
         headers {
             header('Content-Type', 'application/json')
         }

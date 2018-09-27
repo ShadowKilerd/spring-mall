@@ -56,7 +56,7 @@ public class OrderControllerTest {
 
 
         this.mockMvc.perform(
-                post("/api/users/1/orders")
+                post("/users/1/orders")
                 .contentType(MediaType.APPLICATION_JSON)
         )
                 .andExpect(status().isCreated())

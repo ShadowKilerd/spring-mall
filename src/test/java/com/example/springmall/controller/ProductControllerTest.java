@@ -33,7 +33,7 @@ public class ProductControllerTest {
     @Test
     public void should_return_product_list_when_get_product_list() throws Exception {
         given(productService.getProducts()).willReturn(getProducts());
-        this.mockMvc.perform(get("/api/products"))
+        this.mockMvc.perform(get("/products"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$[0].name").value("可乐"))
                 .andExpect(jsonPath("$[1].name").value("雪碧"));

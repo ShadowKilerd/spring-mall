@@ -4,7 +4,7 @@ package order
 org.springframework.cloud.contract.spec.Contract.make {
     request {
         method 'POST'
-        url '/api/users/1/orders'
+        url '/users/1/orders'
         headers {
             header('Content-Type', 'application/json')
         }

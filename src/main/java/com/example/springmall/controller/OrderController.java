@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/users/{userId}/orders")
+@RequestMapping("/users/{userId}/orders")
 public class OrderController {
 
     @Autowired
